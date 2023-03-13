@@ -10,16 +10,25 @@ a {
     color: black;
 }
 
+ul {
+    list-style-type: none;
+}
+
 
 /*Text*/
+
 
 .text-base {
     font-size: 12px;
 }
 
-.title.small {
+.title-small {
     font-size: 20px;
     font-weight: bold;
+}
+
+.title-medium {
+    font-size: 30px;
 }
 
 
@@ -67,6 +76,13 @@ header img {
 nav ul li {
     display: inline;
     margin: 0 15px;
+}
+
+
+/*Main*/
+
+main{
+width: 100vw;
 }
 
 
@@ -166,4 +182,166 @@ nav ul li {
 
 #info {
     font-weight: bold;
+}
+
+
+/*Section Four */
+
+.section-four{
+    background-color: rgba(162, 116, 0, 0.627);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0;
+}
+
+.box {
+    width: calc(100% / 3);
+    margin-bottom: 50px;
+}
+
+
+/*Section Five */
+
+.section-five {
+    background-color: #F5D850;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+
+}
+
+.section-five .title {
+    margin-bottom: 15px;
+}
+
+.partners-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content:center ;
+}
+
+#description-container {
+    padding: 3%;
+}
+
+.partners {
+    width: calc(100% / 3);
+    height: 30vw;
+    background-color: cyan;
+}
+
+.partner {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+#partner-back-1 {
+    background-color: #a2d39b;
+}
+
+#partner-back-2 {
+    background-color: #61082b;
+}
+
+#partner-back-3 {
+    background-color: #0093ce;
+}
+
+#partner-back-4 {
+    background-color: #ff1c1c;
+}
+
+#partner-back-5 {
+    background-color: #d5001f;
+}
+
+#partner-back-6 {
+    background-color: #b4d0e7;
+}
+
+#partner-back-7 {
+    background-color: #0d2481;
+}
+
+#partner-back-8 {
+    background-color: #ffd830;
+}
+
+
+/*Section Six */
+
+.section-six{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: coral;
+}
+
+#faq {
+    margin-bottom: 100px;
+}
+.question {
+    padding: 25px 0;
+    border-bottom: 1px solid #CFCFD2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question i {
+    right: 30px;
+}
+
+.question-title {
+    font-weight: bold;
+}
+
+/*Footer*/
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100vw;
+}
+
+footer .large {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .large:last-of-type {
+    padding: 0;
+}
+
+.footer-section {
+    width: calc(100% / 5);
+    margin: 0 30px;
+    background-color: tomato;
+}
+
+.footer-section .title {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: white;
+}
+
+footer hr {
+    margin-left: 180px;
+    width: 100px;
+}
+
+footer .language {
+    margin: 40px 30px;
+    color: gray;
 }

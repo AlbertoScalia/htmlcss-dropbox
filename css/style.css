@@ -4,3 +4,90 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Text*/
+
+.text-base {
+    font-size: 12px;
+}
+
+
+/*Section width*/
+
+.large {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+
+header .container {
+    position: fixed;
+    justify-content: space-between;
+    background-color: rgb(255, 0, 0);
+    height: 60px;
+    width: 100vw;
+    padding: 15px 20px;
+    z-index: 999;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img, header ul, header a {
+    vertical-align: sub;
+}
+
+header img {
+    margin-right: 15px;
+    width: 100px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+
+/*Section one*/
+
+.section-one {
+    background-color: green;
+    padding-top: 60px;
+}
+
+.section-one .large {
+    margin-top: 60px;
+}
+
+.jumbo {
+    display: flex;
+    bottom: -50px;
+    justify-content: center;
+}
+
+.jumbo-img {
+    width: 650px;
+    background-color: #1F297C;
+}
+
+.jumbo-text {
+    background-color: orange;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+
+

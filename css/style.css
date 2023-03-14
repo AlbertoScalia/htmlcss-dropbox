@@ -546,21 +546,40 @@ main {
 
 #faq {
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .question {
     padding: 25px 0;
     border-bottom: 1px solid #CFCFD2;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
 }
 
 .question i {
-    right: 30px;
+    position: absolute;
+    right: 0px;
+    top:30px
+}
+
+.question:hover i {
+    transition: 1s;
+    transform: rotate(180deg);
+    transition-delay: 0;
 }
 
 .question-title {
     font-weight: bold;
+}
+
+.question:hover .answer {
+    display: block;
+}
+
+.answer {
+    display: none;
+    margin-top: 20px;
 }
 
 

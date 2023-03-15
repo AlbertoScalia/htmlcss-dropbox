@@ -658,10 +658,10 @@ footer .large:last-of-type {
 }
 
 footer hr {
-    margin-left: 22%;
+    margin-left: 325px;
 }
 
 footer .language {
-    margin: 40px 30px;
+    margin: 40px 20px;
     color: gray;
 }

@@ -23,6 +23,11 @@ hr {
 }
 
 
+body {
+    overflow-x: hidden;
+}
+  
+
 /*Text*/
 
 .text-base {
@@ -45,17 +50,17 @@ hr {
 .button {
     padding: 0.5em 1.5em;
     display: inline-block;
+    text-align: center;
 }
 
 .button.blue {
-    background-color: #3A61F8;
+    background-color: #0061ff;
     color: white;
 }
 
 main .button.blue {
     margin-bottom: 20px;
     width: 200px;
-    text-align: center;
 }
 
 .button.white {
@@ -64,8 +69,12 @@ main .button.blue {
     border: 1px solid black;
 }
 
-.button:hover {
-    box-shadow: inset 2px 2px rgba(255, 255, 255, 0.5);
+.button.white:hover {
+    background-color: #e5e5e5;
+}
+
+.button.blue:hover {
+    background-color: #003fa5;
 }
 
 
@@ -85,8 +94,10 @@ main .button.blue {
 
 /*Header*/
 
-header .container {
-    position: fixed;
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100vw;
     padding: 15px 20px;
     z-index: 999;
@@ -94,30 +105,28 @@ header .container {
     background-color: white;
 }
 
-header nav {
+.nav-centrale {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 30px;
+    width: 85%;
 }
 
 header img {
-    margin-right: 15px;
-    width: 80px;
+    width: 100px;
 }
 
-header .button.blue {
-    margin-right: 15px;
-}
-
-nav ul li {
+nav ul li{
     display: inline;
     margin: 0 15px;
 }
 
 header li a:hover {
     padding: 20px 5px;
-    background-color: #CFCFD2;
+    background-color: #e5e5e5;
+}
+
+header .button.blue, header img {
+    margin: 0 15px;
 }
 
 
@@ -132,11 +141,11 @@ main {
 
 #one {
     padding-top: 60px;
-    max-height: 650px;
+    max-height: 600px;
 }
 
 .blue {
-    background-color: #BACEE5;
+    background-color: #b4d0e7;
 }
 
 #one .title{
@@ -145,24 +154,22 @@ main {
     font-weight: 900;
 }
 
-#one .large {
-    margin-top: 60px;
+#one i{
+    font-size: 40px;
+    margin-top: 80px;
 }
 
 .jumbo {
     display: flex;
-    bottom: -50px;
     justify-content: space-between;
 }
 
 .jumbo-img {
-    width: 650px;
+    width: 72%;
 }
 
 .jumbo-text {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
+    width: 28%;
 }
 
 .jumbo-text i {
@@ -184,7 +191,7 @@ main {
 #two{
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 #billings {
@@ -207,7 +214,13 @@ main {
     cursor: pointer;
 }
 
-.radio-custom {
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -218,18 +231,18 @@ main {
     border-radius: 50%;
 }
 
-.radio-container input:checked ~ .radio-custom {
+.radio-container input:checked ~ .checkmark {
     background-color: #3A61F8;
     border: 1px solid #3A61F8;
 }
 
-.radio-custom:after {
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-.radio-container .radio-custom:after {
+.radio-container .checkmark:after {
     background: white;
     top: 0px;
     left: 0px;
@@ -241,16 +254,10 @@ main {
     border-radius: 50%;
 }
 
-.radio-container input:checked ~ .radio-custom:after {
+.radio-container input:checked ~ .checkmark:after {
     display: block;
 }
   
-.radio-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
 .column-container{
     display: flex;
     justify-content: space-between;
@@ -270,7 +277,7 @@ main {
 
 .column.long {
     width: 30%;
-    height: 750px;
+    height: 770px;
     display: flex;
     flex-direction: column;
 }
@@ -295,7 +302,7 @@ main {
 }
 
 .column-info {
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .column-info i {
@@ -330,11 +337,11 @@ main {
 }
 
 .highlight i {
-    color: #3A61F8;
+    color: #0061ff;
 }
 
 .blue-link {
-    color: #3A61F8;
+    color: #0061ff;
     text-decoration: underline;
     display: inline-block;
 }
@@ -347,7 +354,6 @@ main {
     flex-direction: column;
 }
 
-
 .sub-three{
     display: flex;
     flex-direction: row;
@@ -357,7 +363,6 @@ main {
 
 .column.large {
     width: 100%;
-    display: flex;
     flex-direction: column;
 }
 
@@ -405,6 +410,10 @@ main {
     padding-top: 0;
 }
 
+#four .title-medium {
+    margin-bottom: 40px;
+}
+
 .box {
     width: calc(100% / 3 - 20px);
     margin-left: 5px;
@@ -426,6 +435,16 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+#five .title-medium {
+    margin-bottom: 30px;
+}
+
+#five-1 {
+    margin-top: 100px;
+    display: flex;
+    justify-content:center ;
 }
 
 #five-2 {
@@ -453,12 +472,16 @@ main {
     border: none;
 }
 
+#five-2 .title-medium {
+    margin-bottom: 0;
+}
+
 #five .title {
     margin-bottom: 15px;
 }
 
 #description-container {
-    padding: 2% 3%;
+    padding: 3%;
     background-color: #F5F5F5;
     overflow: auto;
     display: initial;
@@ -471,12 +494,6 @@ main {
 
 #description-container p {
     margin: 35px 0;
-}
-
-#five-1 {
-    margin-top: 100px;
-    display: flex;
-    justify-content:center ;
 }
 
 .team-box {
@@ -492,6 +509,10 @@ main {
     justify-content: center;
     width: 50%;
     height: 50%;
+}
+
+.team:hover {
+    border: 10px solid rgba(255, 255, 255, 0.5);
 }
 
 .team img {
@@ -542,12 +563,17 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 30px;
 }
 
 #faq {
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
+}
+
+#six .title-medium {
+    margin-bottom: 40px;
 }
 
 .question {
@@ -557,10 +583,14 @@ main {
     cursor: pointer;
 }
 
+.question:first-of-type {
+    border-top: 1px solid #CFCFD2;
+}
+
 .question i {
     position: absolute;
     right: 0px;
-    top:30px
+    top: 30px
 }
 
 .question:hover i {
@@ -613,6 +643,10 @@ footer .large:last-of-type {
 
 .footer-section li {
     margin-bottom: 10px;
+}
+
+.footer-section li a:hover {
+    color: #b4d0e7;
 }
 
 .footer-section a {

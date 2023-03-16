@@ -30,7 +30,7 @@ body {
 /*Text*/
 
 .text-base {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .title-small {
@@ -50,6 +50,7 @@ body {
     padding: 0.5em 1.5em;
     display: inline-block;
     text-align: center;
+    font-size: 12px;
 }
 
 .button.blue {
@@ -80,12 +81,12 @@ main .button.blue {
 /*Section width*/
 
 .large {
-    width: 60%;
+    width: 1000px;
     margin: 0 auto;
 }
 
 .medium {
-    width: 52%;
+    width: 800px;
     margin: 0 auto;
     padding-top: 70px;
 }
@@ -139,24 +140,24 @@ main {
 
 /*Section one*/
 
-#one {
+#jumbo-section {
     padding-top: 60px;
-    height: 580px;
+    height: 600px;
 }
 
 .blue {
     background-color: #b4d0e7;
 }
 
-#one .title {
+#jumbo-section .title {
     font-size: 58px;
     padding-bottom: 50px;
     font-weight: 900;
 }
 
-#one i {
+#jumbo-section i {
     font-size: 40px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .jumbo {
@@ -188,7 +189,7 @@ main {
 
 /*Section Two*/
 
-#two {
+#plans-section {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -277,7 +278,7 @@ main {
 
 .column.long {
     width: 30%;
-    height: 770px;
+    height: 900px;
     display: flex;
     flex-direction: column;
 }
@@ -353,12 +354,12 @@ main {
 
 /*Section Three*/
 
-#three {
+#enterprise-section {
     display: flex;
     flex-direction: column;
 }
 
-.sub-three {
+.sub-enterprise-section {
     display: flex;
     flex-direction: row;
     padding-top: 0;
@@ -370,7 +371,7 @@ main {
     flex-direction: column;
 }
 
-#three .container {
+#enterprise-section .container {
     display: flex;
     flex-direction: row;
 }
@@ -407,14 +408,14 @@ main {
 
 /*Section Four */
 
-#four {
+#operation-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 0;
 }
 
-#four .title-medium {
+#operation-section .title-medium {
     margin-bottom: 40px;
 }
 
@@ -435,23 +436,23 @@ main {
 
 /*Section Five */
 
-#five {
+#team-section {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-#five .title-medium {
+#team-section .title-medium {
     margin-bottom: 30px;
 }
 
-#five-1 {
+#team-section-1 {
     margin-top: 100px;
     display: flex;
     justify-content: center;
 }
 
-#five-2 {
+#team-section-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -460,7 +461,7 @@ main {
     padding: 100px;
 }
 
-.sub-five-2 {
+.sub-team-section-2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -468,19 +469,19 @@ main {
     margin: 0 auto;
 }
 
-.sub-five-2-large {
+.sub-team-section-2-large {
     width: 50%;
 }
 
-#five-2 .button {
+#team-section-2 .button {
     border: none;
 }
 
-#five-2 .title-medium {
+#team-section-2 .title-medium {
     margin-bottom: 0;
 }
 
-#five .title {
+#team-section .title {
     margin-bottom: 15px;
 }
 
@@ -502,7 +503,7 @@ main {
 
 .team-box {
     width: calc(100% / 3);
-    height: 30vw;
+    height: calc(100vw / 3);
     display: flex;
     flex-wrap: wrap;
 }
@@ -563,7 +564,7 @@ main {
 
 /*Section Six */
 
-#six {
+#question-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -576,7 +577,7 @@ main {
     flex-direction: column;
 }
 
-#six .title-medium {
+#question-section .title-medium {
     margin-bottom: 40px;
 }
 
@@ -637,7 +638,7 @@ footer .large:last-of-type {
 
 .footer-section {
     width: calc(100% / 5);
-    margin: 0 20px;
+    margin-right: 20px;
 }
 
 .footer-section .title {
@@ -658,10 +659,10 @@ footer .large:last-of-type {
 }
 
 footer hr {
-    margin-left: 325px;
+    margin-left: 200px;
 }
 
 footer .language {
-    margin: 40px 20px;
+    margin: 40px 0;
     color: gray;
 }
